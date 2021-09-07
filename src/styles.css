@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap");
+
+:root {
+  --primary-color: #004068;
+}
+
+body {
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  background-color: var(--primary-color);
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  border: 2px solid aqua;
+  border-radius: 15px;
+  color: aqua;
+  width: 30%;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  margin: auto;
+  font-size: 1.2rem;
+  font-weight: 900;
+  margin: 0.75rem 0;
+  /* color: black; */
+}
+
+input {
+  display: block;
+  margin: auto;
+  /* width: 30%; */
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid black;
+  border-radius: 0.75rem;
+  color: #004068;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #004068;
+  border-radius: 0.75rem;
+}
+
+#show-btn {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px #004068 solid;
+  background-color: cyan;
+  color: black;
+  cursor: pointer;
+  margin: 0.75rem 0;
+}
+
+#show-btn:hover {
+  background-color: #fff;
+  color: #004068;
+  font-weight: 500;
+}
+
+.label-input {
+  display: grid;
+  place-items: center;
+}
+
+#output {
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  position: absolute;
+  background: #000000;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
