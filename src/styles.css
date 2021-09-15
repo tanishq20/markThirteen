@@ -1,12 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Roboto:wght@100&display=swap');
 
 :root {
   --primary-color: #004068;
+  --secondary-color: white;
+  --wheat-color: wheat;
+  --github-color: black;
+  --linkedin-color: #0976b4;
+  --twitter-color: #55acee;
+  --insta-color: crimson;
 }
 
 body {
   margin: 0;
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
   background-color: var(--primary-color);
   width: 100%;
   overflow-x: hidden;
@@ -77,21 +83,91 @@ input:focus {
   border-radius: 5px;
 }
 
+/* footer section styling */
 footer {
-  position: absolute;
-  background: #000000;
+  background: var(--primary-color);
   padding: 15px 23px;
-  color: #fff;
+  color: var(--secondary-color);
   text-align: center;
-  width: 100%;
-  bottom: 0px;
+  font-family: 'Comfortaa', cursive;
+  margin-top: 20px;
 }
-
 footer span a {
-  color: crimson;
+  color: var(--wheat-color);
   text-decoration: none;
 }
-
 footer span a:hover {
   text-decoration: underline;
+}
+.social-buttons {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+.social-buttons .social-margin {
+  margin-right: 15px;
+}
+
+.social-buttons .social-icon {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 138px;
+  border: 5px solid;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  line-height: 1px;
+  padding-top: 11px;
+  transition: all 0.5s;
+}
+
+.social-buttons .social-icon.twitter {
+  font-size: 22px;
+  padding-top: 10px;
+  padding-left: 2px;
+  border-color: var(--twitter-color);
+  background-color: var(--twitter-color);
+  color: var(--secondary-color);
+}
+.social-buttons .social-icon.twitter:hover {
+  background-color: var(--secondary-color);
+  color: var(--twitter-color);
+}
+.social-buttons .social-icon.linkedin {
+  font-size: 24px;
+  padding-top: 8px;
+  padding-left: 1px;
+  background-color: var(--linkedin-color);
+  color: var(--secondary-color);
+  border-color: var(--linkedin-color);
+}
+.social-buttons .social-icon.linkedin:hover {
+  background-color: var(--secondary-color);
+  color: var(--linkedin-color);
+}
+.social-buttons .social-icon.instagram {
+  font-size: 22px;
+  padding-top: 9px;
+  background-color: var(--insta-color);
+  color: var(--secondary-color);
+  border-color: var(--insta-color);
+}
+.social-buttons .social-icon.instagram:hover {
+  background-color: var(--secondary-color);
+  color: var(--insta-color);
+}
+.social-buttons .social-icon.github {
+  font-size: 22px;
+  padding-top: 9px;
+  background-color: var(--github-color);
+  color: var(--secondary-color);
+  border-color: var(--github-color);
+}
+.social-buttons .social-icon.github:hover {
+  background-color: var(--secondary-color);
+  color: var(--github-color);
 }
